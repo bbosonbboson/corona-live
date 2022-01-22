@@ -1,0 +1,17 @@
+
+.summary {
+    border: 1px solid red;
+    padding: 15px;
+    margin: 15px;
+}
+
+.summary ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+.summary ul li {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
