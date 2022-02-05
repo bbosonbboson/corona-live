@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom"
 import Box from "../Box"
 import "./style.css"
 
@@ -5,18 +6,38 @@ import "./style.css"
 const Sidebar = () => {
     return (
         <aside>
-            <Box isPadding>
-            <header>
-                <h1>
-                    CORONA LIVE
-                </h1>
-            </header>
+            <Box 
+            isPadding
+            >
+                <header>
+                    <h1>
+                        CORONA LIVE
+                    </h1>
+                </header>
             </Box>
             <Box>
             <ul>
-                <li className="selected">국내</li>
-                <li>해외</li>
-                <li>백신</li>
+                <NavLink to="/" className={({
+                    isActive
+                }) => isActive ? 'selected': ''}>
+                    <li>
+                        국내
+                    </li>
+                </NavLink>
+                <NavLink to="/world" className={({
+                    isActive
+                }) => isActive ? 'selected': ''}>
+                    <li>
+                        해외
+                    </li>
+                </NavLink>
+                <NavLink to="/vaccine" className={({
+                    isActive
+                }) => isActive ? 'selected': ''}>
+                    <li>
+                        백신
+                    </li>
+                </NavLink>
             </ul>
             </Box>
         </aside>
