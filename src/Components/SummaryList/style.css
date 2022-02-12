@@ -1,4 +1,4 @@
-
+    
 .summary-list table {
     width: 100%;
 }
@@ -8,6 +8,11 @@
     color: rgb(130,130,132);
     font-weight: bold;
     text-align: center;
+    cursor: pointer;
+}
+
+.summary-list thead th span {
+    font-size: 18px;
 }
 
 
@@ -31,3 +36,4 @@
     color: rgb(130,130,132);
     margin-left: 2px;
 }
+
