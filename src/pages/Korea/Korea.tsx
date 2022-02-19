@@ -23,6 +23,7 @@ const Korea = () => {
             <Summary summary={summary}/>
             <TodaySummary summary={summary}/>
             <SummaryList summary={summary}/>
+            <SummaryList summary={summary}/>
         </>
     )
 }
