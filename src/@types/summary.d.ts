@@ -1,5 +1,7 @@
 interface SummaryType {
-    countryNm: string; // 도시명
+  //@types 폴더 안에 생성된 d.ts. 파일은 이 프로젝트 내에서 글로벌로 사용할 타입을 지정할 수 있음  
+  
+  countryNm: string; // 도시명
     deathCnt: number; // 사망자 수
     incDec: number; // 전일대비 확진
     incDecF: number; // 전일대비 확진 - 해외

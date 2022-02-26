@@ -4,6 +4,7 @@ import WorldTodaySummary from "../../Components/WorldTodaySummary/WorldTodaySumm
 import { httpGetWorldSummary } from "../../httpAPI";
 
 
+// Korea.tsx랑 비슷한 구조이니 Korea에서 확인
 const World = () => {
     const [worldSummary, setWorldSummary] = useState<WorldSummaryType>();
 
